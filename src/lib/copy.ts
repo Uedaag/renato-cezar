@@ -322,14 +322,14 @@ export const LOTES = [
   },
   {
     nome: "2º lote",
-    status: "Próximo",
+    status: "Indisponível",
     preco: "89,70",
     ativo: false,
     itens: ["Aula ao vivo de 1h30", "Mesmo conteúdo", "Próximo lote"],
   },
   {
     nome: "3º lote",
-    status: "Final",
+    status: "Indisponível",
     preco: "179,40",
     ativo: false,
     itens: ["Aula ao vivo de 1h30", "Mesmos bônus", "Último lote"],
