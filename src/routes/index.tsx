@@ -233,11 +233,11 @@ function PaginaVendas() {
             <div data-reveal="zoom" className="relative">
               <div className="superficie flutua overflow-hidden">
                 <img
-                  src={heroImg}
-                  alt="Composição visual sobre clareza e organização financeira"
-                  width={1600}
-                  height={1200}
-                  className="h-full w-full object-cover opacity-95"
+                  src={renatoHero}
+                  alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
+                  width={1024}
+                  height={1280}
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
