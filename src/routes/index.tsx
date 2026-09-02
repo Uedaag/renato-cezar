@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 import heroImg from "@/assets/hero.jpg";
 import problemaImg from "@/assets/problema.jpg";
+import renatoImg from "@/assets/renato-cezar.png.asset.json";
 import { useReveal, useScrollProgress } from "@/hooks/useReveal";
 import {
   APRENDIZADOS,
@@ -181,7 +182,7 @@ function PaginaVendas() {
               <h1
                 data-reveal
                 style={{ ["--reveal-delay" as string]: "90ms" }}
-                className={`mt-6 text-[2.1rem] font-extrabold leading-[1.06] md:text-6xl ${anim}`}
+                className={`mt-6 text-[1.9rem] font-extrabold leading-[1.08] md:text-5xl ${anim}`}
               >
                 {c.heroHeadline}{" "}
                 <span className="texto-ouro">{c.heroDestaque}</span>
@@ -275,7 +276,7 @@ function PaginaVendas() {
             </div>
             <div data-reveal="right">
               <Etiqueta>{c.problemaEtiqueta}</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.problemaTitulo}
               </h2>
               <p className={`mt-5 text-muted-foreground md:text-lg ${anim}`}>
@@ -299,7 +300,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <div className="mx-auto max-w-2xl text-center" data-reveal>
             <Etiqueta>{c.transformacaoEtiqueta}</Etiqueta>
-            <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
               {c.transformacaoTitulo}
             </h2>
             <p className={`mt-4 text-muted-foreground ${anim}`}>
@@ -333,7 +334,7 @@ function PaginaVendas() {
         <Secao>
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div data-reveal="left">
-              <h2 className={`text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.descobertaTitulo}
               </h2>
               <p className={`mt-4 text-muted-foreground ${anim}`}>
@@ -363,7 +364,7 @@ function PaginaVendas() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div data-reveal>
               <Etiqueta>Como funciona</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.oQueETitulo}
               </h2>
               <p className={`mt-5 text-muted-foreground md:text-lg ${anim}`}>
