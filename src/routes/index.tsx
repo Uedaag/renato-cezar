@@ -633,7 +633,7 @@ function PaginaVendas() {
         <Secao>
           <h2
             data-reveal
-            className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.provaTitulo}
           </h2>
@@ -664,7 +664,7 @@ function PaginaVendas() {
           <div className="mx-auto max-w-3xl">
             <h2
               data-reveal
-              className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+              className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
             >
               {c.faqTitulo}
             </h2>
@@ -718,7 +718,7 @@ function PaginaVendas() {
             aria-hidden="true"
           />
           <div className="relative mx-auto max-w-3xl text-center" data-reveal="zoom">
-            <h2 className={`text-3xl font-extrabold md:text-5xl ${anim}`}>
+            <h2 className={`text-2xl font-extrabold md:text-4xl ${anim}`}>
               {c.finalTitulo}
             </h2>
             <p className={`mt-6 text-muted-foreground md:text-lg ${anim}`}>
