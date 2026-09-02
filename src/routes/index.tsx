@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-import heroImg from "@/assets/hero.jpg";
 import problemaImg from "@/assets/problema.jpg";
-import renatoImg from "@/assets/renato-cezar.png.asset.json";
+import renatoAutoridade from "@/assets/renato-autoridade.png";
+import renatoHero from "@/assets/renato-hero.png";
 import { useReveal, useScrollProgress } from "@/hooks/useReveal";
 import {
   APRENDIZADOS,
@@ -234,11 +234,11 @@ function PaginaVendas() {
             <div data-reveal="zoom" className="relative">
               <div className="superficie flutua overflow-hidden">
                 <img
-                  src={heroImg}
-                  alt="Composição visual sobre clareza e organização financeira"
-                  width={1600}
-                  height={1200}
-                  className="h-full w-full object-cover opacity-95"
+                  src={renatoHero}
+                  alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
+                  width={1024}
+                  height={1280}
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>
@@ -465,7 +465,7 @@ function PaginaVendas() {
               className="superficie flutua overflow-hidden"
             >
               <img
-                src={renatoImg.url}
+                src={renatoAutoridade}
                 alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
                 width={1024}
                 height={1280}
@@ -478,11 +478,14 @@ function PaginaVendas() {
               <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.autoridadeTitulo}
               </h2>
+              <p className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
+                <span className="texto-ouro">Renato Cezar</span>
+              </p>
               <div className="mt-6 space-y-4 text-muted-foreground md:text-lg">
                 <p>
-                  Renato Cezar trabalha há mais de 12 anos como analista financeiro.
-                  Mesmo cuidando das contas de empresas, ele também viveu dificuldades
-                  com o próprio dinheiro.
+                  Renato trabalha há mais de 12 anos como analista financeiro. Mesmo
+                  cuidando das contas de empresas, ele também viveu dificuldades com o
+                  próprio dinheiro.
                 </p>
                 <p>
                   O momento mais difícil foi não ter dinheiro para pagar uma festa de
