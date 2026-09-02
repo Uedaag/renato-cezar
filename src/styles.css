@@ -256,6 +256,17 @@
   }
 }
 
+/* brilho dentro do cartão (não sofre corte por overflow) */
+@utility brilho-interno {
+  background-image:
+    radial-gradient(
+      80% 55% at 50% 0%,
+      color-mix(in oklab, var(--primary) 16%, transparent),
+      transparent 75%
+    ),
+    var(--gradient-surface);
+}
+
 @utility grade-sutil {
   background-image:
     linear-gradient(color-mix(in oklab, var(--foreground) 5%, transparent) 1px, transparent 1px),
