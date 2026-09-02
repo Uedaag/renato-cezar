@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-import heroImg from "@/assets/hero.jpg";
-import problemaImg from "@/assets/problema.jpg";
-import renatoImg from "@/assets/renato-cezar.png.asset.json";
+import renatoAutoridade from "@/assets/renato-autoridade.png";
+import renatoHero from "@/assets/renato-hero.png";
 import { useReveal, useScrollProgress } from "@/hooks/useReveal";
 import {
   APRENDIZADOS,
