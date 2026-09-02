@@ -477,11 +477,14 @@ function PaginaVendas() {
               <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.autoridadeTitulo}
               </h2>
+              <p className="mt-4 font-display text-3xl font-extrabold md:text-4xl">
+                <span className="texto-ouro">Renato Cezar</span>
+              </p>
               <div className="mt-6 space-y-4 text-muted-foreground md:text-lg">
                 <p>
-                  Renato Cezar trabalha há mais de 12 anos como analista financeiro.
-                  Mesmo cuidando das contas de empresas, ele também viveu dificuldades
-                  com o próprio dinheiro.
+                  Renato trabalha há mais de 12 anos como analista financeiro. Mesmo
+                  cuidando das contas de empresas, ele também viveu dificuldades com o
+                  próprio dinheiro.
                 </p>
                 <p>
                   O momento mais difícil foi não ter dinheiro para pagar uma festa de
