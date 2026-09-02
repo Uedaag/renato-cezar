@@ -3,6 +3,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 import heroImg from "@/assets/hero.jpg";
 import problemaImg from "@/assets/problema.jpg";
+import renatoImg from "@/assets/renato-cezar.png.asset.json";
 import { useReveal, useScrollProgress } from "@/hooks/useReveal";
 import {
   APRENDIZADOS,
@@ -181,7 +182,7 @@ function PaginaVendas() {
               <h1
                 data-reveal
                 style={{ ["--reveal-delay" as string]: "90ms" }}
-                className={`mt-6 text-[2.1rem] font-extrabold leading-[1.06] md:text-6xl ${anim}`}
+                className={`mt-6 text-[1.9rem] font-extrabold leading-[1.08] md:text-5xl ${anim}`}
               >
                 {c.heroHeadline}{" "}
                 <span className="texto-ouro">{c.heroDestaque}</span>
@@ -275,7 +276,7 @@ function PaginaVendas() {
             </div>
             <div data-reveal="right">
               <Etiqueta>{c.problemaEtiqueta}</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.problemaTitulo}
               </h2>
               <p className={`mt-5 text-muted-foreground md:text-lg ${anim}`}>
@@ -299,7 +300,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <div className="mx-auto max-w-2xl text-center" data-reveal>
             <Etiqueta>{c.transformacaoEtiqueta}</Etiqueta>
-            <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
               {c.transformacaoTitulo}
             </h2>
             <p className={`mt-4 text-muted-foreground ${anim}`}>
@@ -333,7 +334,7 @@ function PaginaVendas() {
         <Secao>
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div data-reveal="left">
-              <h2 className={`text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.descobertaTitulo}
               </h2>
               <p className={`mt-4 text-muted-foreground ${anim}`}>
@@ -363,7 +364,7 @@ function PaginaVendas() {
           <div className="grid gap-12 lg:grid-cols-2">
             <div data-reveal>
               <Etiqueta>Como funciona</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.oQueETitulo}
               </h2>
               <p className={`mt-5 text-muted-foreground md:text-lg ${anim}`}>
@@ -400,7 +401,7 @@ function PaginaVendas() {
         <Secao>
           <div className="mx-auto max-w-2xl text-center" data-reveal>
             <Etiqueta>{c.ofertaEtiqueta}</Etiqueta>
-            <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
               Escolha o seu lote
             </h2>
             <p className={`mt-4 text-muted-foreground ${anim}`}>{c.ofertaTexto}</p>
@@ -461,15 +462,20 @@ function PaginaVendas() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div
               data-reveal="left"
-              className="superficie flex aspect-4/5 items-center justify-center p-8 text-center"
+              className="superficie flutua overflow-hidden"
             >
-              <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                [INSERIR FOTO OFICIAL DE RENATO CEZAR]
-              </p>
+              <img
+                src={renatoImg.url}
+                alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
+                width={1024}
+                height={1280}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
             <div data-reveal="right">
               <Etiqueta>Autoridade</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.autoridadeTitulo}
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground md:text-lg">
@@ -503,7 +509,7 @@ function PaginaVendas() {
             className="superficie brilho-radial mx-auto max-w-4xl p-10 text-center md:p-16"
           >
             <Etiqueta>Diferencial único</Etiqueta>
-            <h2 className={`mt-6 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-6 text-2xl font-bold md:text-3xl ${anim}`}>
               {c.diferencialTitulo}
             </h2>
             <p
@@ -518,7 +524,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <h2
             data-reveal
-            className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.paraQuemTitulo}
           </h2>
@@ -556,7 +562,7 @@ function PaginaVendas() {
         <Secao>
           <div className="grid gap-12 lg:grid-cols-[1fr_0.85fr]">
             <div>
-              <h2 data-reveal className={`text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 data-reveal className={`text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.ofertaTitulo}
               </h2>
               <div className="mt-8 space-y-4">
@@ -605,7 +611,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <h2
             data-reveal
-            className={`mx-auto max-w-2xl text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`mx-auto max-w-2xl text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.objecoesTitulo}
           </h2>
@@ -627,7 +633,7 @@ function PaginaVendas() {
         <Secao>
           <h2
             data-reveal
-            className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.provaTitulo}
           </h2>
@@ -658,7 +664,7 @@ function PaginaVendas() {
           <div className="mx-auto max-w-3xl">
             <h2
               data-reveal
-              className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+              className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
             >
               {c.faqTitulo}
             </h2>
@@ -712,7 +718,7 @@ function PaginaVendas() {
             aria-hidden="true"
           />
           <div className="relative mx-auto max-w-3xl text-center" data-reveal="zoom">
-            <h2 className={`text-3xl font-extrabold md:text-5xl ${anim}`}>
+            <h2 className={`text-2xl font-extrabold md:text-4xl ${anim}`}>
               {c.finalTitulo}
             </h2>
             <p className={`mt-6 text-muted-foreground md:text-lg ${anim}`}>
