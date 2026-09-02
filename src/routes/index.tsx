@@ -401,7 +401,7 @@ function PaginaVendas() {
         <Secao>
           <div className="mx-auto max-w-2xl text-center" data-reveal>
             <Etiqueta>{c.ofertaEtiqueta}</Etiqueta>
-            <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
               Escolha o seu lote
             </h2>
             <p className={`mt-4 text-muted-foreground ${anim}`}>{c.ofertaTexto}</p>
@@ -462,15 +462,20 @@ function PaginaVendas() {
           <div className="grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div
               data-reveal="left"
-              className="superficie flex aspect-4/5 items-center justify-center p-8 text-center"
+              className="superficie flutua overflow-hidden"
             >
-              <p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">
-                [INSERIR FOTO OFICIAL DE RENATO CEZAR]
-              </p>
+              <img
+                src={renatoImg.url}
+                alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
+                width={1024}
+                height={1280}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
             <div data-reveal="right">
               <Etiqueta>Autoridade</Etiqueta>
-              <h2 className={`mt-5 text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 className={`mt-5 text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.autoridadeTitulo}
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground md:text-lg">
@@ -504,7 +509,7 @@ function PaginaVendas() {
             className="superficie brilho-radial mx-auto max-w-4xl p-10 text-center md:p-16"
           >
             <Etiqueta>Diferencial único</Etiqueta>
-            <h2 className={`mt-6 text-3xl font-bold md:text-4xl ${anim}`}>
+            <h2 className={`mt-6 text-2xl font-bold md:text-3xl ${anim}`}>
               {c.diferencialTitulo}
             </h2>
             <p
@@ -519,7 +524,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <h2
             data-reveal
-            className={`text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.paraQuemTitulo}
           </h2>
@@ -557,7 +562,7 @@ function PaginaVendas() {
         <Secao>
           <div className="grid gap-12 lg:grid-cols-[1fr_0.85fr]">
             <div>
-              <h2 data-reveal className={`text-3xl font-bold md:text-4xl ${anim}`}>
+              <h2 data-reveal className={`text-2xl font-bold md:text-3xl ${anim}`}>
                 {c.ofertaTitulo}
               </h2>
               <div className="mt-8 space-y-4">
@@ -606,7 +611,7 @@ function PaginaVendas() {
         <Secao className="bg-surface/40">
           <h2
             data-reveal
-            className={`mx-auto max-w-2xl text-center text-3xl font-bold md:text-4xl ${anim}`}
+            className={`mx-auto max-w-2xl text-center text-2xl font-bold md:text-3xl ${anim}`}
           >
             {c.objecoesTitulo}
           </h2>
