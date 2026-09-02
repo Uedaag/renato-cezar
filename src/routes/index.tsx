@@ -416,7 +416,7 @@ function PaginaVendas() {
                 className={`superficie cartao relative flex flex-col p-8 ${
                   lote.ativo
                     ? "border-primary/45 shadow-[var(--glow-gold)]"
-                    : "opacity-70"
+                    : "opacity-35 saturate-50"
                 }`}
               >
                 <div className="flex items-center justify-between">
@@ -588,7 +588,7 @@ function PaginaVendas() {
 
             <aside
               data-reveal="right"
-              className="superficie brilho-radial h-fit p-8 text-center lg:sticky lg:top-24"
+              className="superficie brilho-interno w-full self-center p-8 text-center"
             >
               <p className="font-display text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
                 {c.bonusTitulo}
