@@ -509,7 +509,7 @@ function PaginaVendas() {
         <Secao>
           <div
             data-reveal="zoom"
-            className="superficie brilho-radial mx-auto max-w-4xl p-10 text-center md:p-16"
+            className="superficie brilho-interno mx-auto max-w-4xl p-10 text-center md:p-16"
           >
             <Etiqueta>Diferencial único</Etiqueta>
             <h2 className={`mt-6 text-2xl font-bold md:text-3xl ${anim}`}>
