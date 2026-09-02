@@ -464,7 +464,7 @@ function PaginaVendas() {
               className="superficie flutua overflow-hidden"
             >
               <img
-                src={renatoImg.url}
+                src={renatoAutoridade}
                 alt="Renato Cezar, analista financeiro e conduztor da aula Despertar Financeiro"
                 width={1024}
                 height={1280}
