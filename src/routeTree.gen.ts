@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as Modelo1RouteImport } from './routes/modelo-1'
+import { Route as Modelo2RouteImport } from './routes/modelo-2'
+import { Route as Modelo3RouteImport } from './routes/modelo-3'
+import { Route as Modelo4RouteImport } from './routes/modelo-4'
+import { Route as ObrigadoRouteImport } from './routes/obrigado'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Modelo1Route = Modelo1RouteImport.update({
+  id: '/modelo-1',
+  path: '/modelo-1',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Modelo2Route = Modelo2RouteImport.update({
+  id: '/modelo-2',
+  path: '/modelo-2',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Modelo3Route = Modelo3RouteImport.update({
+  id: '/modelo-3',
+  path: '/modelo-3',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Modelo4Route = Modelo4RouteImport.update({
+  id: '/modelo-4',
+  path: '/modelo-4',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ObrigadoRoute = ObrigadoRouteImport.update({
+  id: '/obrigado',
+  path: '/obrigado',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/modelo-1': typeof Modelo1Route
+  '/modelo-2': typeof Modelo2Route
+  '/modelo-3': typeof Modelo3Route
+  '/modelo-4': typeof Modelo4Route
+  '/obrigado': typeof ObrigadoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/modelo-1': typeof Modelo1Route
+  '/modelo-2': typeof Modelo2Route
+  '/modelo-3': typeof Modelo3Route
+  '/modelo-4': typeof Modelo4Route
+  '/obrigado': typeof ObrigadoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/modelo-1': typeof Modelo1Route
+  '/modelo-2': typeof Modelo2Route
+  '/modelo-3': typeof Modelo3Route
+  '/modelo-4': typeof Modelo4Route
+  '/obrigado': typeof ObrigadoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/modelo-1' | '/modelo-2' | '/modelo-3' | '/modelo-4' | '/obrigado'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/modelo-1' | '/modelo-2' | '/modelo-3' | '/modelo-4' | '/obrigado'
+  id:
+    | '__root__'
+    | '/'
+    | '/modelo-1'
+    | '/modelo-2'
+    | '/modelo-3'
+    | '/modelo-4'
+    | '/obrigado'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  Modelo1Route: typeof Modelo1Route
+  Modelo2Route: typeof Modelo2Route
+  Modelo3Route: typeof Modelo3Route
+  Modelo4Route: typeof Modelo4Route
+  ObrigadoRoute: typeof ObrigadoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/modelo-1': {
+      id: '/modelo-1'
+      path: '/modelo-1'
+      fullPath: '/modelo-1'
+      preLoaderRoute: typeof Modelo1RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modelo-2': {
+      id: '/modelo-2'
+      path: '/modelo-2'
+      fullPath: '/modelo-2'
+      preLoaderRoute: typeof Modelo2RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modelo-3': {
+      id: '/modelo-3'
+      path: '/modelo-3'
+      fullPath: '/modelo-3'
+      preLoaderRoute: typeof Modelo3RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/modelo-4': {
+      id: '/modelo-4'
+      path: '/modelo-4'
+      fullPath: '/modelo-4'
+      preLoaderRoute: typeof Modelo4RouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/obrigado': {
+      id: '/obrigado'
+      path: '/obrigado'
+      fullPath: '/obrigado'
+      preLoaderRoute: typeof ObrigadoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  Modelo1Route: Modelo1Route,
+  Modelo2Route: Modelo2Route,
+  Modelo3Route: Modelo3Route,
+  Modelo4Route: Modelo4Route,
+  ObrigadoRoute: ObrigadoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
